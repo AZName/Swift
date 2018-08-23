@@ -32,6 +32,15 @@ print(a + 2)
 print(type(of: a))
 
 var b = 3.14
+
+
+//可以声明多个变量
+var A = 1, B = 2, C = 2
+C = A + B
+print(C)
+
+
+
 print(type(of: b)) //浮点类型的字面量创建默认为double类型
 
 var 变量 = "可以用中文么" //支持unicode 字符命名变量   开发中不推荐这么干
@@ -70,3 +79,55 @@ if str == nil {
 var str2:String! = "312,32fs,fs,f"
 
 print(str2!.split(separator: ","))
+
+
+var isBool = true;
+
+
+print(isBool)
+
+
+//元组
+
+
+var HttpError = (400,"Not Fount")
+
+print(HttpError)
+
+let http404Error = (404, "Not Found")
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+
+
+var text:String?
+
+
+print(text)
+
+
+func canThrowAnError() throws {
+    
+}
+//异常捕捉
+do {
+    try canThrowAnError()
+    // no error was thrown
+} catch {
+    // an error was thrown
+    print("发现错误")
+}
+//断言
+
+
+//assert(<#T##condition: Bool##Bool#>) 这个参数是判断是否满足条件来触发断言
+//assert(<#T##condition: Bool##Bool#>, <#T##message: String##String#>) ///第二个参数是打印断言所触发的消息
+
+
+
+
+
+
+
+
+
+
