@@ -20,6 +20,7 @@ import UIKit
  Optional 可选类型 使用可选类型来处理确实值的情况表示有值或者无值
  var 变量
  let 常量
+ 如果存储的值不会改变，请用 let 关键字将之声明为一个常量。只有储存会改变的值时才使用变量。
  static 静态类型修饰符
  */
 
@@ -57,7 +58,7 @@ var optionalInt:Optional <Int>
 
 var str:String?
 
-    str = "holle world!"
+str = "holle world!"
 
 if str == nil {
     print("All this happened, more or less.")
@@ -69,10 +70,3 @@ if str == nil {
 var str2:String! = "312,32fs,fs,f"
 
 print(str2!.split(separator: ","))
-
-
-
-
-
-
-
