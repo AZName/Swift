@@ -23,6 +23,8 @@ print(sixDoutbles)
 
 print(sixDoutbles.count)
 
+//判断数组是否为空sixDoutables.isEmppty
+
 
 
 
